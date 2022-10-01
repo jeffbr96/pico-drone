@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/run"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:layout_width="136dp"
+        android:layout_height="55dp"
+        android:clickable="true"
+        android:onClick="buttonClick"
+        android:text="Run"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.152"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.326" />
+
+    <Button
+        android:id="@+id/stop"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:layout_width="136dp"
+        android:layout_height="55dp"
+        android:clickable="true"
+        android:onClick="buttonClick"
+        android:text="Stop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintStart_toEndOf="@+id/run"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.326" />
+
+    <Button
+        android:id="@+id/calibrate"
+        android:layout_width="209dp"
+        android:layout_height="87dp"
+        android:clickable="true"
+        android:onClick="buttonClick"
+        android:text="calibrate"
+        app:layout_constraintBottom_toTopOf="@+id/run"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.465"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.65" />
+
+    <ToggleButton
+        android:id="@+id/tvIP"
+        android:layout_width="149dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="272dp"
+        android:clickable="false"
+        android:enabled="false"
+        android:fontFamily="monospace"
+        android:maxWidth="200dp"
+        android:minWidth="150dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_light"
+        android:textIsSelectable="true"
+        android:textOff="@string/ipv4"
+        android:textOn="@string/connected"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button1"
+        app:layout_constraintVertical_bias="0.738" />
+
+    <Button
+        android:id="@+id/send"
+        android:layout_width="148dp"
+        android:layout_height="67dp"
+        android:layout_marginEnd="36dp"
+        android:clickable="true"
+        android:onClick="buttonClick"
+        android:text="Send"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/message1"
+        app:layout_constraintVertical_bias="0.661" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/inputText1"
+        android:layout_width="149dp"
+        android:layout_height="50dp"
+        android:hint="hint"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintHorizontal_bias="0.366"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.929" />
+
+    <EditText
+        android:id="@+id/message1"
+        android:layout_width="220dp"
+        android:layout_height="101dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvIP"
+        app:layout_constraintVertical_bias="0.14" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

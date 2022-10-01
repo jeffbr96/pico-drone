@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Drone</string>
+    <string name="connected">connected</string>
+    <string name="ipv4">ipv4</string>
+</resources>

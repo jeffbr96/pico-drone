@@ -1,7 +1,6 @@
-# Automated Robotic Water Probe and Android Wireless Controller
+# Automated brushless Quad and Android Wireless Controller
 ## Abstract
-This project is educational and is aimed at constructing a robotic device capable of communicating wirelessly to an android device in which its orchestrating allows for the exchange of data and commands. This Robotic device must be able to work autonomously following a reactive robotics design. The product of our robotic design contains many modes of motion some reactive, some pseudo random, some hybrid and one dependent on triangulation from a GPS module. 
-The Android application was written to communicate and manage the device remotely. 
+This project aims at teting the feasability of using a Pi Pico device for a 4 brushless Quad. Please not that this id for educational purposes and the joy of tinkering. This may be dangerous propellers could harm you or demage property, do it at your own discretion. Flying a drone on certain areas is illegal DO NOT DO IT! Have fun! 
 Video test 1 | 
 :-: | 
 [<img src="https://img.youtube.com/vi/NtiLop2u5mY/maxresdefault.jpg" width="50%">](https://youtu.be/NtiLop2u5mY)|
